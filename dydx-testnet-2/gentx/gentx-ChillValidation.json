@@ -1,0 +1,62 @@
+{
+    "body": {
+        "messages": [
+            {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                    "moniker": "Chill Validation",
+                    "identity": "3820B9E30B3BD99E",
+                    "website": "https://www.chillvalidation.com",
+                    "security_contact": "omsec@chillvalidation.com",
+                    "details": "Chill Validation Services - We take care of the Validation so that you can Chill :)"
+                },
+                "commission": {
+                    "rate": "0.050000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "dydx1smwcu6lt09ed2dclwmdmjwgdkyd6tzanfhz0r4",
+                "validator_address": "dydxvaloper1smwcu6lt09ed2dclwmdmjwgdkyd6tzanvf5egy",
+                "pubkey": {
+                    "@type": "/cosmos.crypto.ed25519.PubKey",
+                    "key": "9RvDC7LqNyesWt1/WEG82FrkrJIe+tLi6DzFbSKBItE="
+                },
+                "value": {
+                    "denom": "dv4tnt",
+                    "amount": "50000000000"
+                }
+            }
+        ],
+        "memo": "db31d72ba4a2aa2b1161939e0589b744339c4764@8.8.8.8:26656",
+        "timeout_height": "0",
+        "extension_options": [],
+        "non_critical_extension_options": []
+    },
+    "auth_info": {
+        "signer_infos": [
+            {
+                "public_key": {
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "AsB6xzVv5qsw7XMCjA11ITNexLrnMp/PY8zdA3wPRTx0"
+                },
+                "mode_info": {
+                    "single": {
+                        "mode": "SIGN_MODE_DIRECT"
+                    }
+                },
+                "sequence": "0"
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas_limit": "200000",
+            "payer": "",
+            "granter": ""
+        },
+        "tip": null
+    },
+    "signatures": [
+        "k84lgV9tGHhv2y/mjWez7xUeLB1AddjTlA3diETjZpBRNia1OCfQ9MB72S6QSRSiLzS+0y9CIWYvvdBnOkMpBw=="
+    ]
+}
