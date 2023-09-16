@@ -2,19 +2,19 @@ name: Validate genesis.json
 on:  # yamllint disable-line rule:truthy
   pull_request:
     paths:
-      - 'dydx-testnet-2/genesis.json'
+      - 'dydx-testnet-3/genesis.json'
   push:
     paths:
-      - 'dydx-testnet-2/genesis.json'
+      - 'dydx-testnet-3/genesis.json'
     branches:
       - main
       - master
 
 jobs:
-  dydx-testnet-2:
+  dydx-testnet-3:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
       - name: Validate final genesis file
-        run: make validate-dydx-testnet-2-final-genesis
+        run: make validate-dydx-testnet-3-final-genesis
