@@ -7,11 +7,13 @@ set -euo pipefail
 
 dir_path=$VALIDATE_GENESIS_DIR_PATH
 genesis_file=$GENESIS_FILE_NAME
-tar_path=$VALIDATE_GENESIS_TAR_PATH
+tar_url=$VALIDATE_GENESIS_TAR_URL
 stake_token=$VALIDATE_GENESIS_STAKE_TOKEN
 add_gentxs=$ADD_GENTXS
 
+tar_path='/tmp/dydxprotocold/dydxprotocold.tar.gz'
 mkdir -p /tmp/dydxprotocold
+curl -vL $tar_url -o $tar_path
 dydxprotocold_path=$(tar -xvf $tar_path --directory /tmp/dydxprotocold)
 mkdir -p ~/bin
 cp /tmp/dydxprotocold/$dydxprotocold_path /usr/local/bin/dydxprotocold
