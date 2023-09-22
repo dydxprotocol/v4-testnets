@@ -1,5 +1,5 @@
-# dYdX V4 Public Testnet
-Welcome to the public testnet for dYdX V4! We'll be using this repo for distributing binaries, coordinating genesis, etc.
+# dYdX v4 Mainnet
+Welcome to the Mainnet for dYdX v4! This repo will be used for distributing binaries, coordinating genesis, etc.
 
 ## Useful Links
 - [Testnet documentations](https://v4-teacher.vercel.app/)
