@@ -7,15 +7,15 @@ on:  # yamllint disable-line rule:truthy
       - master
 
 jobs:
-  dydx-testnet-3:
+  dydx-mainnet-1:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
       - name: Validate genesis for gentx
-        run: make validate-dydx-testnet-3-gentx
+        run: make validate-dydx-mainnet-1-gentx
       - uses: actions/upload-artifact@v3
         with:
           name: genesis.new.json
-          path: dydx-testnet-3/genesis.new.json
+          path: dydx-mainnet-1/genesis.new.json
           if-no-files-found: error

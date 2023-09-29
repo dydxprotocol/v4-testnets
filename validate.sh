@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Given a path to a copy of private-testnet repo, create a genesis.json using the
-# gentx and pregenesis.json in the repo.
+# Create a genesis.json using the gentx and pregenesis.json
 
 set -euo pipefail
 
@@ -38,7 +37,7 @@ add_genesis_account () {
   done
 }
 
-dydxprotocold init --chain-id=dydxprotocol-testnet dydx-1
+dydxprotocold init --chain-id=dydx-mainnet-1 dydx-1
 cp $dir_path/$genesis_file ~/.dydxprotocol/config/genesis.json
 
 if [ "$add_gentxs" = "true" ]; then
