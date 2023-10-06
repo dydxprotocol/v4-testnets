@@ -17,33 +17,11 @@ dydxprotocold_path=$(tar -xvf $tar_path --directory /tmp/dydxprotocold)
 mkdir -p ~/bin
 cp /tmp/dydxprotocold/$dydxprotocold_path /usr/local/bin/dydxprotocold
 
-add_genesis_account () {
-  find "$1" -type f -name "*.json" | while read json_file; do
-    delegator_address=$(jq -r '.body.messages[0].delegator_address' "$json_file")
-    moniker=$(jq -r '.body.messages[0].description.moniker' "$json_file")
-
-    if [ "$moniker" != "dydx-1" ] && [ "$moniker" != "dydx-2" ] && [ "$moniker" != "dydx-research" ]; then
-      denom=$(jq -r '.body.messages[0].value.denom' "$json_file")
-      amount=$(jq -r '.body.messages[0].value.amount' "$json_file")
-
-      if [ "$amount$denom" != "50000000000$stake_token" ]; then
-          echo "Expected 50000000000$stake_token delegated tokens, but got $amount$denom"
-          exit 1
-      fi
-
-      echo "Adding genesis for $delegator_address"
-      dydxprotocold add-genesis-account "$delegator_address" 100000000000$stake_token
-    fi
-  done
-}
 
 dydxprotocold init --chain-id=dydx-mainnet-1 dydx-1
 cp $dir_path/$genesis_file ~/.dydxprotocol/config/genesis.json
 
 if [ "$add_gentxs" = "true" ]; then
-  echo "Adding gentxs to pregenesis..."
-  add_genesis_account $dir_path/gentx
-
   mkdir ~/.dydxprotocol/config/gentx
   cp $dir_path/gentx/* ~/.dydxprotocol/config/gentx
 
