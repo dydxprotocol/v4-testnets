@@ -18,4 +18,4 @@ jobs:
         with:
           name: genesis.new.json
           path: dydx-testnet-4/genesis.new.json
-          if-no-files-found: -4
+          if-no-files-found: error
