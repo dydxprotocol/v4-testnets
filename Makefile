@@ -1,4 +1,4 @@
-validate-dydx-testnet4-gentx:
+validate-dydx-testnet-4-gentx:
 	docker build --platform linux/amd64 --tag public-testnet-validate $(CURDIR)
 	docker run --platform linux/amd64 \
 		-e VALIDATE_GENESIS_DIR_PATH=./dydx-testnet-4 \
