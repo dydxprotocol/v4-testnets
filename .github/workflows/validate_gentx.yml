@@ -1,5 +1,5 @@
 name: Create and validate genesis for gentx
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   pull_request:
   push:
     branches:
@@ -18,4 +18,4 @@ jobs:
         with:
           name: genesis.new.json
           path: dydx-testnet-3/genesis.new.json
-          if-no-files-found: error
+          if-no-files-found: -4
