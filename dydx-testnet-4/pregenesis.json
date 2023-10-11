@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-10-11T03:48:58.266127Z",
+  "genesis_time": "2023-10-11T04:11:33.451001Z",
   "chain_id": "dydx-testnet-4",
   "initial_height": "1",
   "consensus_params": {
@@ -892,7 +892,7 @@
                 },
                 "value": {
                   "denom": "adv4tnt",
-                  "amount": "1001882102603448320"
+                  "amount": "500000000000000000000000"
                 }
               }
             ],
@@ -925,7 +925,7 @@
             "tip": null
           },
           "signatures": [
-            "ftq8DjA0elDBEcY0n+9+QZf8Xltqz+9Ct34dIxBgTThtBhoX8GyXXPos5sZW1cD0wREqj0Kxcv/ZenKnXF7VDA=="
+            "4s97UChd9Ow5LkfUj7Mx5s/3Q7Fr/eBYvIwSlun5SUhgYu6Xs2cIC5ip5R6riuGtuNbzSAsRX4CtipdiHVOPrA=="
           ]
         },
         {
@@ -954,7 +954,7 @@
                 },
                 "value": {
                   "denom": "adv4tnt",
-                  "amount": "1001882102603448320"
+                  "amount": "500000000000000000000000"
                 }
               }
             ],
@@ -987,7 +987,7 @@
             "tip": null
           },
           "signatures": [
-            "ueJ2+KDBG8QUX8JEqkZy32REvjvaI2awLGnf5TdVP/0QcaHdzvFlGezT+/8CgNXoeIUHM8frPZJg/aVW8ejsOg=="
+            "eHzZ633KA6NMkiW4YrDZr2/8Kns6U1UFvj69TjmoV+VALxDmCxOTlZ3/gBbAOp6ZwWQYvr29yBEopPc32FOYvA=="
           ]
         },
         {
@@ -1016,7 +1016,7 @@
                 },
                 "value": {
                   "denom": "adv4tnt",
-                  "amount": "1001882102603448320"
+                  "amount": "500000000000000000000000"
                 }
               }
             ],
@@ -1049,7 +1049,7 @@
             "tip": null
           },
           "signatures": [
-            "4wT0xBLa7jNPbyt3N8vZnhKan/HOsDz0RsWQLu1XGzp3kv6NnZRuB+s9m4CukKwQkQU5T4WHBP8NwzM3uTj5rQ=="
+            "H+R21IilkOM4RtQLtZZ2Vme5+AOADrJCUiwPb6iptk8ggy9sU8n9xKAA0uIQAeqjlhJrKfaHyxgbD3hgMx7+KA=="
           ]
         }
       ]
