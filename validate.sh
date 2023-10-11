@@ -18,6 +18,11 @@ dydxprotocold_path=$(tar -xvf $tar_path --directory /tmp/dydxprotocold)
 mkdir -p ~/bin
 cp /tmp/dydxprotocold/$dydxprotocold_path /usr/local/bin/dydxprotocold
 
+NINE_ZEROS="000000000"
+EIGHTEEN_ZEROS="$NINE_ZEROS$NINE_ZEROS"
+INITIAL_VALIDATOR_TOKEN_BALANCE="1000000$EIGHTEEN_ZEROS"
+INITIAL_VALIDATOR_SELF_DELEGATION="500000$EIGHTEEN_ZEROS"
+
 add_genesis_account () {
   find "$1" -type f -name "*.json" | while read json_file; do
     delegator_address=$(jq -r '.body.messages[0].delegator_address' "$json_file")
@@ -27,13 +32,13 @@ add_genesis_account () {
       denom=$(jq -r '.body.messages[0].value.denom' "$json_file")
       amount=$(jq -r '.body.messages[0].value.amount' "$json_file")
 
-      if [ "$amount$denom" != "50000000000$stake_token" ]; then
-          echo "Expected 50000000000$stake_token delegated tokens, but got $amount$denom"
+      if [ "$amount$denom" != "$INITIAL_VALIDATOR_SELF_DELEGATION$stake_token" ]; then
+          echo "Expected $INITIAL_VALIDATOR_SELF_DELEGATION$stake_token delegated tokens, but got $amount$denom"
           exit 1
       fi
 
       echo "Adding genesis for $delegator_address"
-      dydxprotocold add-genesis-account "$delegator_address" 100000000000$stake_token
+      dydxprotocold add-genesis-account "$delegator_address" $INITIAL_VALIDATOR_TOKEN_BALANCE$stake_token
     fi
   done
 }
