@@ -24,7 +24,7 @@
         },
         "value": {
           "denom": "adv4tnt",
-          "amount": "50000000000"
+          "amount": "500000000000000000000000"
         }
       }
     ],
@@ -57,6 +57,6 @@
     "tip": null
   },
   "signatures": [
-    "p3Ho0hyMCHLdo+i6M4cyjmf4zBghfM4Q8nro6GZP2p44RjuGwVnc3TBXJF5MVNDzWkEv+wM5ChLj2a8Eq6fvWA=="
+    "ftoMrLvZpo9juRRv4lq+/W+x1zAd4/lPAst2ZHfA8dwXuncRU9MX6Rz/u824LbYQHct02LSpr8pVZ2rp0FUgPw=="
   ]
 }
