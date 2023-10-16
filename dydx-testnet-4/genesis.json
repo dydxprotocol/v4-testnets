@@ -1163,7 +1163,7 @@
         "skip_rate_ppm": 800000
       },
       "safety_params": {
-        "delay_blocks": 86400,
+        "delay_blocks": 21600,
         "is_disabled": false
       }
     },
