@@ -1,10 +1,10 @@
 {
-  "genesis_time": "2023-10-11T04:19:58.475018Z",
+  "genesis_time": "2023-10-16T15:59:31.690655Z",
   "chain_id": "dydx-testnet-4",
   "initial_height": "1",
   "consensus_params": {
     "block": {
-      "max_bytes": "22020096",
+      "max_bytes": "4194304",
       "max_gas": "-1"
     },
     "evidence": {
@@ -109,7 +109,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -118,7 +118,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -127,7 +127,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -174,7 +174,6 @@
     },
     "blocktime": {
       "params": {
-        "clock_drift_grace_period_duration": "5s",
         "durations": [
           "300s",
           "1800s"
@@ -188,7 +187,7 @@
       },
       "event_params": {
         "denom": "adv4tnt",
-        "eth_address": "0xcca9D5f0a3c58b6f02BD0985fC7F9420EA24C1f0",
+        "eth_address": "0xf75012c350e4ad55be2048bd67ce6e03b20de82d",
         "eth_chain_id": 11155111
       },
       "propose_params": {
@@ -586,7 +585,7 @@
             "usd_tnc_required": "10000000000"
           },
           {
-            "limit": 200,
+            "limit": 1000,
             "usd_tnc_required": "100000000000"
           }
         ],
@@ -622,7 +621,6 @@
           "bankruptcy_adjustment_ppm": 1000000,
           "spread_to_maintenance_margin_ratio_ppm": 1500000
         },
-        "max_insurance_fund_quantums_for_deleveraging": 100000000000,
         "max_liquidation_fee_ppm": 15000,
         "position_block_limits": {
           "max_position_portion_liquidated_ppm": 100000,
@@ -727,7 +725,7 @@
           }
         }
       ],
-      "num_messages": 1
+      "next_delayed_message_id": 1
     },
     "distribution": {
       "delegator_starting_infos": [],
