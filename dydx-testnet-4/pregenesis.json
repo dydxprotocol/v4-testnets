@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-10-16T15:59:31.690655Z",
+  "genesis_time": "2023-01-01T00:00:00Z",
   "chain_id": "dydx-testnet-4",
   "initial_height": "1",
   "consensus_params": {
