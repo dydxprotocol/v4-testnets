@@ -169,7 +169,29 @@
         }
       ],
       "supply": [],
-      "denom_metadata": [],
+      "denom_metadata": [
+        {
+          "description": "The native token of the network",
+          "denom_units": [
+            {
+              "denom": "adv4tnt",
+              "exponent": 0,
+              "aliases": []
+            },
+            {
+              "denom": "dv4tnt",
+              "exponent": 18,
+              "aliases": []
+            }
+          ],
+          "base": "adv4tnt",
+          "display": "dv4tnt",
+          "name": "dYdX V4 Testnet Token",
+          "symbol": "dv4tnt",
+          "uri": "",
+          "uri_hash": ""
+        }
+      ],
       "send_enabled": []
     },
     "blocktime": {
@@ -1955,7 +1977,7 @@
       "params": {
         "downtime_jail_duration": "60s",
         "min_signed_per_window": "0.2",
-        "signed_blocks_window": "12000",
+        "signed_blocks_window": "12288",
         "slash_fraction_double_sign": "0.0",
         "slash_fraction_downtime": "0.0"
       },
