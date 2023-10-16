@@ -1,10 +1,10 @@
 {
-  "genesis_time": "2023-10-11T04:19:58.475018Z",
+  "genesis_time": "2023-01-01T00:00:00Z",
   "chain_id": "dydx-testnet-4",
   "initial_height": "1",
   "consensus_params": {
     "block": {
-      "max_bytes": "22020096",
+      "max_bytes": "4194304",
       "max_gas": "-1"
     },
     "evidence": {
@@ -109,7 +109,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -118,7 +118,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -127,7 +127,7 @@
           "coins": [
             {
               "denom": "adv4tnt",
-              "amount": "1000000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         },
@@ -169,12 +169,33 @@
         }
       ],
       "supply": [],
-      "denom_metadata": [],
+      "denom_metadata": [
+        {
+          "description": "The native token of the network",
+          "denom_units": [
+            {
+              "denom": "adv4tnt",
+              "exponent": 0,
+              "aliases": []
+            },
+            {
+              "denom": "dv4tnt",
+              "exponent": 18,
+              "aliases": []
+            }
+          ],
+          "base": "adv4tnt",
+          "display": "dv4tnt",
+          "name": "dYdX V4 Testnet Token",
+          "symbol": "dv4tnt",
+          "uri": "",
+          "uri_hash": ""
+        }
+      ],
       "send_enabled": []
     },
     "blocktime": {
       "params": {
-        "clock_drift_grace_period_duration": "5s",
         "durations": [
           "300s",
           "1800s"
@@ -188,7 +209,7 @@
       },
       "event_params": {
         "denom": "adv4tnt",
-        "eth_address": "0xcca9D5f0a3c58b6f02BD0985fC7F9420EA24C1f0",
+        "eth_address": "0xf75012c350e4ad55be2048bd67ce6e03b20de82d",
         "eth_chain_id": 11155111
       },
       "propose_params": {
@@ -586,7 +607,7 @@
             "usd_tnc_required": "10000000000"
           },
           {
-            "limit": 200,
+            "limit": 1000,
             "usd_tnc_required": "100000000000"
           }
         ],
@@ -622,7 +643,6 @@
           "bankruptcy_adjustment_ppm": 1000000,
           "spread_to_maintenance_margin_ratio_ppm": 1500000
         },
-        "max_insurance_fund_quantums_for_deleveraging": 100000000000,
         "max_liquidation_fee_ppm": 15000,
         "position_block_limits": {
           "max_position_portion_liquidated_ppm": 100000,
@@ -727,7 +747,7 @@
           }
         }
       ],
-      "num_messages": 1
+      "next_delayed_message_id": 1
     },
     "distribution": {
       "delegator_starting_infos": [],
@@ -1957,7 +1977,7 @@
       "params": {
         "downtime_jail_duration": "60s",
         "min_signed_per_window": "0.2",
-        "signed_blocks_window": "12000",
+        "signed_blocks_window": "12288",
         "slash_fraction_double_sign": "0.0",
         "slash_fraction_downtime": "0.0"
       },
