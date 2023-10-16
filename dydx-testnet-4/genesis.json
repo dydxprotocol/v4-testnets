@@ -1607,7 +1607,7 @@
     "delaymsg": {
       "delayed_messages": [
         {
-          "block_height": 378000,
+          "block_height": 57600,
           "id": 0,
           "msg": {
             "@type": "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams",
