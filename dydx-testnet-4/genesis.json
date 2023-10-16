@@ -1148,7 +1148,7 @@
     },
     "bridge": {
       "acknowledged_event_info": {
-        "eth_block_height": 4322136,
+        "eth_block_height": 4495114,
         "next_id": 5
       },
       "event_params": {
